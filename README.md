@@ -1,16 +1,4 @@
-<p align="center">
-  <a href="https://github.com/joonacode/psychoart_landing_page">
-    <img src="screenshot.png" alt="screenshot">
-  </a>
 
-  <h1 align="center">PsychoArt</h3>
-Mencoba tailwindcss v3.0 dengan mengslicing landing page. Design by <a href='https://www.figma.com/@zet_dev'>Dliya' Zarror Nibros</a>
-<br/ >
-  <p align="center">
-    <br />
-    <a href="https://psychoart.joonacode.com">View Demo</a>
-  </p>
-</p>
 
 ### Built With
 
