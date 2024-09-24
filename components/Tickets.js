@@ -96,7 +96,7 @@ const Tickets = () => {
               Хаяг байршил : Баянгол ресторан
             </div>
             <div className="text-center p-2 xs:text-xl">
-              Эхлэх өдөр : 9/23-ны Даваа гариг
+              Эхлэх өдөр : 10/3-ны Пүрэв гариг
             </div>
             <div className="text-center p-2 xs:text-xl">
               Эхлэх/Дуусах хугацаа : 19:00 - 23:00
