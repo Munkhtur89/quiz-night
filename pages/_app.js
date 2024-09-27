@@ -13,7 +13,7 @@ function MyApp({ Component, pageProps }) {
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content={process.env.NEXT_PUBLIC_MAIN_URL} />
+        <meta property="og:url" content={`https://www.quiznight.mn/`} />
         <meta property="og:title" content="Quiz night" />
         <meta property="og:description" content="UB Quiz Night" />
         <meta
