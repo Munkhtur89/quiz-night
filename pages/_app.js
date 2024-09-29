@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }) {
         <title>Quiz night</title>
         <meta name="title" content="Quiz night" />
         <meta name="description" content="UB Quiz Night" />
-        <meta name="keywords" content="nft, marketplace" />
+        <meta name="keywords" content="quiznight, ub" />
         <meta name="robots" content="index, follow" />
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -23,9 +23,7 @@ function MyApp({ Component, pageProps }) {
 
         <meta property="og:locale" content="id" />
 
-        <meta property="og:image:type" content="png" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
+        <meta property="og:image:type" content="image/png" />
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content={"https://www.quiznight.mn/"} />
         <meta property="twitter:title" content="Quiz night" />
