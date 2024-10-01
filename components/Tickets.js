@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Button, Container } from ".";
 import { Reveal } from "react-awesome-reveal";
 import { fadeInLeft } from "@/keyframes";
@@ -8,19 +8,40 @@ import "moment/locale/mn";
 import Link from "next/link";
 
 const Tickets = () => {
-  const now = moment();
-  const firstDayOfMonth = now.startOf("month");
-  const dayOfWeek = firstDayOfMonth.day(); // 0 = Sunday, 1 = Monday, ..., 6 = Saturday
-  const targetDayOfWeek = 2; // Tuesday
-  const offset = (targetDayOfWeek - dayOfWeek + 7) % 7;
-  let firstTuesday = firstDayOfMonth.add(offset, "days");
+  const getNextTuesdayAndThursday = () => {
+    const today = new Date();
 
-  if (firstTuesday.isAfter(now.endOf("month"))) {
-    firstTuesday = firstTuesday
-      .add(1, "month")
-      .startOf("month")
-      .day(targetDayOfWeek);
-  }
+    const utcTime = today;
+
+    const upcomingDays = { tuesday: null, thursday: null };
+    let currentDate = utcTime;
+    while (!upcomingDays.tuesday || !upcomingDays.thursday) {
+      const dayOfWeek = currentDate.getUTCDay();
+      if (dayOfWeek === 2 && !upcomingDays.tuesday) {
+        upcomingDays.tuesday =
+          currentDate.toLocaleDateString().split("/")[0] +
+          "/" +
+          currentDate.toLocaleDateString().split("/")[1];
+      }
+      if (dayOfWeek === 4 && !upcomingDays.thursday) {
+        upcomingDays.thursday =
+          currentDate.toLocaleDateString().split("/")[0] +
+          "/" +
+          currentDate.toLocaleDateString().split("/")[1];
+      }
+      currentDate.setDate(currentDate.getDate() + 1);
+    }
+
+    return upcomingDays;
+  };
+
+  const [tuesday, setTuesday] = useState("");
+  const [thursday, setThursday] = useState("");
+
+  useEffect(() => {
+    setTuesday(getNextTuesdayAndThursday().tuesday);
+    setThursday(getNextTuesdayAndThursday().thursday);
+  }, []);
 
   return (
     <Container className="mb-44 scroll-mt-10" id="tickets">
@@ -52,7 +73,7 @@ const Tickets = () => {
               Хаяг байршил : Баянгол ресторан
             </div>
             <div className="text-center p-2 xs:text-xl">
-              Эхлэх өдөр : 9/30-ны Даваа гариг
+              Эхлэх өдөр : {tuesday}-ны Мягмар гариг
             </div>
             <div className="text-center p-2 xs:text-xl">
               Эхлэх/Дуусах хугацаа : 19:00 - 23:00
@@ -96,7 +117,7 @@ const Tickets = () => {
               Хаяг байршил : Баянгол ресторан
             </div>
             <div className="text-center p-2 xs:text-xl">
-              Эхлэх өдөр : 10/3-ны Пүрэв гариг
+              Эхлэх өдөр : {thursday}-ны Пүрэв гариг
             </div>
             <div className="text-center p-2 xs:text-xl">
               Эхлэх/Дуусах хугацаа : 19:00 - 23:00
