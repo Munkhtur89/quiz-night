@@ -73,7 +73,7 @@ const Tickets = () => {
               Хаяг байршил : Баянгол ресторан
             </div>
             <div className="text-center p-2 xs:text-xl">
-              Эхлэх өдөр : {tuesday}-ны Мягмар гариг
+              Эхлэх өдөр : 10/8-ны Мягмар гариг
             </div>
             <div className="text-center p-2 xs:text-xl">
               Эхлэх/Дуусах хугацаа : 19:00 - 23:00
