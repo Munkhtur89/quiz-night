@@ -25,9 +25,7 @@ const Tickets = () => {
       }
       if (dayOfWeek === 4 && !upcomingDays.thursday) {
         upcomingDays.thursday =
-          currentDate.toLocaleDateString().split("/")[0] +
-          "/" +
-          currentDate.toLocaleDateString().split("/")[1];
+          currentDate.getMonth() + 1 + "/" + currentDate.getDate();
       }
       currentDate.setDate(currentDate.getDate() + 1);
     }
