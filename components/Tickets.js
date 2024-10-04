@@ -71,7 +71,7 @@ const Tickets = () => {
               Хаяг байршил : Баянгол ресторан
             </div>
             <div className="text-center p-2 xs:text-xl">
-              Эхлэх өдөр : 10/8-ны Мягмар гариг
+              Эхлэх өдөр : Мягмар гариг бүр
             </div>
             <div className="text-center p-2 xs:text-xl">
               Эхлэх/Дуусах хугацаа : 19:00 - 23:00
@@ -115,7 +115,7 @@ const Tickets = () => {
               Хаяг байршил : Баянгол ресторан
             </div>
             <div className="text-center p-2 xs:text-xl">
-              Эхлэх өдөр : {thursday}-ны Пүрэв гариг
+              Эхлэх өдөр : Пүрэв гариг бүр
             </div>
             <div className="text-center p-2 xs:text-xl">
               Эхлэх/Дуусах хугацаа : 19:00 - 23:00
