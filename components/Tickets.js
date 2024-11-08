@@ -173,7 +173,7 @@ const Tickets = () => {
             <div className="text-center p-2 xs:text-xl">Үнэ : 20,000₮</div>
             <div className="text-center p-2 xs:text-xl">
               <Link
-                href="https://www.portal.mn/quiznight/66b19dcad290ccac1873102d"
+                href="https://www.portal.mn/events/672d6355357e8f9256d1e443"
                 passHref
               >
                 <Button
