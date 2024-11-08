@@ -141,6 +141,52 @@ const Tickets = () => {
           </div>
         </div>
       </Reveal>
+      <Reveal keyframes={fadeInLeft} triggerOnce>
+        <div className="transition duration-300 ease-in-out bg-[#ffffff1a] p-5 rounded-lg shadow-lg flex flex-col lg:flex-row mt-10">
+          <div className="rounded-lg overflow-hidden mb-3 relative w-full h-[300px] sm:h-[200px] lg:w-[350px] lg:h-[300px]">
+            <Image
+              layout="fill"
+              objectFit="cover"
+              objectPosition="center"
+              src="/collections/Singles.jpeg"
+              alt="Singles Quiz"
+            />
+          </div>
+          <div className="flex-1 lg:ml-5">
+            <div className="text-center p-2 sm:text-2xl">SINGLES QUIZ</div>
+            <div className="text-center p-2 xs:text-xl">
+              Хаяг байршил : Титэм Ресторан (Holiday Inn зочид буудлын 20
+              давхар)
+            </div>
+            <div className="text-center p-2 xs:text-xl">
+              Эхлэх өдөр : 2024 11 сар 13
+            </div>
+            <div className="text-center p-2 xs:text-xl">
+              Эхлэх/Дуусах хугацаа : 19:00
+            </div>
+            <div className="text-center p-2 xs:text-xl">
+              Тайлбар : Quiz Night тэмцээний байнгын оролцогч нартаа зориулаад
+              заавал баг бүрдүүлэх шаардлагагүй ганцаараа ирээд шууд оролцох
+              боломжтой шинэ эвэнтийг та бүхэндээ зориулж зарлаж байна. Та
+              тасалбараа аваад цагтаа ирээд санаандгүйгээр багт хувиарлагдах юм.
+            </div>
+            <div className="text-center p-2 xs:text-xl">Үнэ : 20,000₮</div>
+            <div className="text-center p-2 xs:text-xl">
+              <Link
+                href="https://www.portal.mn/quiznight/66b19dcad290ccac1873102d"
+                passHref
+              >
+                <Button
+                  className="bg-gradient-to-r from-[#B75CFF] to-[#671AE4] w-full lg:w-[400px] mt-3 flex-1 justify-center"
+                  as="a"
+                >
+                  Ширээ захиалах
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </Reveal>
     </Container>
   );
 };
