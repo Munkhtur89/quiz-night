@@ -159,7 +159,7 @@ const Tickets = () => {
               давхар)
             </div>
             <div className="text-center p-2 xs:text-xl">
-              Эхлэх өдөр : 2024 11 сар 13
+              Эхлэх өдөр : 2024 11 сар 27
             </div>
             <div className="text-center p-2 xs:text-xl">
               Эхлэх/Дуусах хугацаа : 19:00
@@ -173,7 +173,7 @@ const Tickets = () => {
             <div className="text-center p-2 xs:text-xl">Үнэ : 20,000₮</div>
             <div className="text-center p-2 xs:text-xl">
               <Link
-                href="https://www.portal.mn/events/672d6355357e8f9256d1e443"
+                href="https://www.portal.mn/events/673bfbaa383bdbe1fe25d272"
                 passHref
               >
                 <Button
