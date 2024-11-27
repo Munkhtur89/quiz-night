@@ -141,7 +141,7 @@ const Tickets = () => {
           </div>
         </div>
       </Reveal>
-      <Reveal keyframes={fadeInLeft} triggerOnce>
+      {/* <Reveal keyframes={fadeInLeft} triggerOnce>
         <div className="transition duration-300 ease-in-out bg-[#ffffff1a] p-5 rounded-lg shadow-lg flex flex-col lg:flex-row mt-10">
           <div className="rounded-lg overflow-hidden mb-3 relative w-full h-[300px] sm:h-[200px] lg:w-[350px] lg:h-[300px]">
             <Image
@@ -186,7 +186,7 @@ const Tickets = () => {
             </div>
           </div>
         </div>
-      </Reveal>
+      </Reveal> */}
     </Container>
   );
 };
