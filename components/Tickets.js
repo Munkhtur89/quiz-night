@@ -109,9 +109,13 @@ const Tickets = () => {
               alt="Thursday Event"
             />
           </div>
-          <div className="flex-1 lg:ml-5">
+          <div className="flex-1 items-center lg:ml-5">
             <div className="text-center p-2 sm:text-2xl">Quiz Night</div>
+            <div className="text-center p-2 xs:text-xl">2025 онд</div>
             <div className="text-center p-2 xs:text-xl">
+              1-р улирлаар уулзацгаая
+            </div>
+            {/* <div className="text-center p-2 xs:text-xl">
               Хаяг байршил : Баянгол ресторан
             </div>
             <div className="text-center p-2 xs:text-xl">
@@ -137,7 +141,7 @@ const Tickets = () => {
                   Ширээ захиалах
                 </Button>
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </Reveal>
