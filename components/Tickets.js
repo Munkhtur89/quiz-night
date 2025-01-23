@@ -8,6 +8,8 @@ import "moment/locale/mn";
 import Link from "next/link";
 
 const Tickets = () => {
+  const [isTuesdayOpen, setIsTuesdayOpen] = useState(false);
+  const [isThursdayOpen, setIsThursdayOpen] = useState(false);
   const getNextTuesdayAndThursday = () => {
     const today = new Date();
 
@@ -35,7 +37,6 @@ const Tickets = () => {
 
   const [tuesday, setTuesday] = useState("");
   const [thursday, setThursday] = useState("");
-
   useEffect(() => {
     setTuesday(getNextTuesdayAndThursday().tuesday);
     setThursday(getNextTuesdayAndThursday().thursday);
@@ -66,33 +67,45 @@ const Tickets = () => {
             />
           </div>
           <div className="flex-1 lg:ml-5">
-            <div className="text-center p-2 sm:text-2xl">Rookie Quiz</div>
-            <div className="text-center p-2">
-              Хаяг байршил : Баянгол ресторан
-            </div>
-            <div className="text-center p-2 xs:text-xl">
-              Эхлэх өдөр : Мягмар гариг бүр
-            </div>
-            <div className="text-center p-2 xs:text-xl">
-              Эхлэх/Дуусах хугацаа : 19:00 - 23:00
-            </div>
-            <div className="text-center p-2 xs:text-xl">
-              Тайлбар : Quiz Night тэмцээнд оролцох ширээ болон багийн бооцооны
-              мөнгө багтсан
-            </div>
-            <div className="text-center p-2 xs:text-xl">Үнэ : 100,000₮</div>
-            <div className="text-center p-2 xs:text-xl">
-              <Link
-                href="https://www.portal.mn/quiznight/66b19f26d290ccac18731044"
-                passHref
+            <div className="w-full flex justify-center items-center">
+              <button
+                className={`${
+                  isTuesdayOpen ? "hidden" : "block"
+                } bg-gradient-to-r from-[#B75CFF] to-[#671AE4] py-2 px-5 rounded-xl`}
+                onClick={() => setIsTuesdayOpen(!isTuesdayOpen)}
               >
-                <Button
-                  className="bg-gradient-to-r from-[#B75CFF] to-[#671AE4] w-full lg:w-[400px] mt-3 flex-1 justify-center"
-                  as="a"
+                Дэлгэрэнгүй
+              </button>
+            </div>
+            <div className={`lg:block  ${isTuesdayOpen ? "block" : "hidden"}`}>
+              <div className="text-center p-2 sm:text-2xl">Rookie Quiz</div>
+              <div className="text-center p-2">
+                Хаяг байршил : Баянгол ресторан
+              </div>
+              <div className="text-center p-2 xs:text-xl">
+                Эхлэх өдөр : Мягмар гариг бүр
+              </div>
+              <div className="text-center p-2 xs:text-xl">
+                Эхлэх/Дуусах хугацаа : 19:00 - 23:00
+              </div>
+              <div className="text-center p-2 xs:text-xl">
+                Тайлбар : Quiz Night тэмцээнд оролцох ширээ болон багийн
+                бооцооны мөнгө багтсан
+              </div>
+              <div className="text-center p-2 xs:text-xl">Үнэ : 100,000₮</div>
+              <div className="text-center p-2 xs:text-xl">
+                <Link
+                  href="https://www.portal.mn/quiznight/66b19f26d290ccac18731044"
+                  passHref
                 >
-                  Ширээ захиалах
-                </Button>
-              </Link>
+                  <Button
+                    className="bg-gradient-to-r from-[#B75CFF] to-[#671AE4] w-full lg:w-[400px] mt-3 flex-1 justify-center"
+                    as="a"
+                  >
+                    Ширээ захиалах
+                  </Button>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
@@ -110,33 +123,45 @@ const Tickets = () => {
             />
           </div>
           <div className="flex-1 items-center lg:ml-5">
-            <div className="text-center p-2 sm:text-2xl">Quiz Night</div>
-            <div className="text-center p-2 xs:text-xl">
-              Хаяг байршил : Баянгол ресторан
-            </div>
-            <div className="text-center p-2 xs:text-xl">
-              Эхлэх өдөр : Пүрэв гариг бүр
-            </div>
-            <div className="text-center p-2 xs:text-xl">
-              Эхлэх/Дуусах хугацаа : 19:00 - 23:00
-            </div>
-            <div className="text-center p-2 xs:text-xl">
-              Тайлбар : Quiz Night тэмцээнд оролцох ширээ болон багийн бооцооны
-              мөнгө багтсан
-            </div>
-            <div className="text-center p-2 xs:text-xl">Үнэ : 100,000₮</div>
-            <div className="text-center p-2 xs:text-xl">
-              <Link
-                href="https://www.portal.mn/quiznight/66b19dcad290ccac1873102d"
-                passHref
+            <div className="w-full flex justify-center items-center">
+              <button
+                className={`${
+                  isThursdayOpen ? "hidden" : "block"
+                } bg-gradient-to-r from-[#B75CFF] to-[#671AE4] py-2 px-5 rounded-xl`}
+                onClick={() => setIsThursdayOpen(!isThursdayOpen)}
               >
-                <Button
-                  className="bg-gradient-to-r from-[#B75CFF] to-[#671AE4] w-full lg:w-[400px] mt-3 flex-1 justify-center"
-                  as="a"
+                Дэлгэрэнгүй
+              </button>
+            </div>
+            <div className={`lg:block ${isThursdayOpen ? "block" : "hidden"}`}>
+              <div className="text-center p-2 sm:text-2xl">Quiz Night</div>
+              <div className="text-center p-2 xs:text-xl">
+                Хаяг байршил : Баянгол ресторан
+              </div>
+              <div className="text-center p-2 xs:text-xl">
+                Эхлэх өдөр : Пүрэв гариг бүр
+              </div>
+              <div className="text-center p-2 xs:text-xl">
+                Эхлэх/Дуусах хугацаа : 19:00 - 23:00
+              </div>
+              <div className="text-center p-2 xs:text-xl">
+                Тайлбар : Quiz Night тэмцээнд оролцох ширээ болон багийн
+                бооцооны мөнгө багтсан
+              </div>
+              <div className="text-center p-2 xs:text-xl">Үнэ : 100,000₮</div>
+              <div className="text-center p-2 xs:text-xl">
+                <Link
+                  href="https://www.portal.mn/quiznight/66b19dcad290ccac1873102d"
+                  passHref
                 >
-                  Ширээ захиалах
-                </Button>
-              </Link>
+                  <Button
+                    className="bg-gradient-to-r from-[#B75CFF] to-[#671AE4] w-full lg:w-[400px] mt-3 flex-1 justify-center"
+                    as="a"
+                  >
+                    Ширээ захиалах
+                  </Button>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
