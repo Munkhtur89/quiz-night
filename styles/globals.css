@@ -28,6 +28,5 @@ body {
 
 .btn_primary_outline {
   background: transparent;
-  border: 3px solid
-    linear-gradient(193deg, rgba(183, 92, 255, 1) 15%, rgba(103, 26, 228, 1) 89%);
+  border: 3px solid linear-gradient(193deg, rgba(183, 92, 255, 1) 15%, rgba(103, 26, 228, 1) 89%);
 }
