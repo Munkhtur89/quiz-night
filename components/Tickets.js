@@ -71,7 +71,7 @@ const Tickets = () => {
               <button
                 className={`${
                   isTuesdayOpen ? "hidden" : "block"
-                } bg-gradient-to-r from-[#B75CFF] to-[#671AE4] py-2 px-5 rounded-xl`}
+                } lg:hidden bg-gradient-to-r from-[#B75CFF] to-[#671AE4] py-2 px-5 rounded-xl`}
                 onClick={() => setIsTuesdayOpen(!isTuesdayOpen)}
               >
                 Дэлгэрэнгүй
@@ -127,7 +127,7 @@ const Tickets = () => {
               <button
                 className={`${
                   isThursdayOpen ? "hidden" : "block"
-                } bg-gradient-to-r from-[#B75CFF] to-[#671AE4] py-2 px-5 rounded-xl`}
+                } lg:hidden bg-gradient-to-r from-[#B75CFF] to-[#671AE4] py-2 px-5 rounded-xl`}
                 onClick={() => setIsThursdayOpen(!isThursdayOpen)}
               >
                 Дэлгэрэнгүй
