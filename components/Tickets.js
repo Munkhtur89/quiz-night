@@ -92,7 +92,7 @@ const Tickets = () => {
                 Тайлбар : Quiz Night тэмцээнд оролцох ширээ болон багийн
                 бооцооны мөнгө багтсан
               </div>
-              <div className="text-center p-2 xs:text-xl">Үнэ : 100,000₮</div>
+              <div className="text-center p-2 xs:text-xl">Үнэ : 120,000₮</div>
               <div className="text-center p-2 xs:text-xl">
                 <Link
                   href="https://www.portal.mn/quiznight/66b19f26d290ccac18731044"
@@ -148,7 +148,7 @@ const Tickets = () => {
                 Тайлбар : Quiz Night тэмцээнд оролцох ширээ болон багийн
                 бооцооны мөнгө багтсан
               </div>
-              <div className="text-center p-2 xs:text-xl">Үнэ : 100,000₮</div>
+              <div className="text-center p-2 xs:text-xl">Үнэ : 120,000₮</div>
               <div className="text-center p-2 xs:text-xl">
                 <Link
                   href="https://www.portal.mn/quiznight/66b19dcad290ccac1873102d"
