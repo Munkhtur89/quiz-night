@@ -29,7 +29,7 @@ const Sponsor = () => {
                 layout="fill"
                 objectFit="contain"
                 objectPosition="center"
-                src="/collections/Chingis.png"
+                src="/collections/san-miguel.jpeg"
                 alt="blockchainio"
               />
             </div>
