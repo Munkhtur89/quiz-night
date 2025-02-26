@@ -15,10 +15,8 @@ export default async function handler(req, res) {
   await connectDB();
   if (req.method === "POST") {
     const { table_no, date, team_name, phone_number } = req.body;
-    if (!table_no || !team_name || !phone_number) {
-      res
-        .status(400)
-        .send({ error: "table_no or team_name or phone_number not provided" });
+    if (!table_no || !team_name) {
+      res.status(400).send({ error: "table_no or team_name not provided" });
     } else {
       try {
         const updated = await Table.findOne({ table_no, date });

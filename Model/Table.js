@@ -27,7 +27,7 @@ const Table = mongoose.Schema(
     },
     phone_number: {
       type: String,
-      required: true,
+      required: false,
     },
   },
   {
