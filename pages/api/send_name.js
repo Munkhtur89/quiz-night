@@ -14,9 +14,11 @@ export default async function handler(req, res) {
   }
   await connectDB();
   if (req.method === "POST") {
-    const { table_no, date, team_name } = req.body;
-    if (!table_no || !team_name) {
-      res.status(400).send({ error: "table_no or team_name not provided" });
+    const { table_no, date, team_name, phone_number } = req.body;
+    if (!table_no || !team_name || !phone_number) {
+      res
+        .status(400)
+        .send({ error: "table_no or team_name or phone_number not provided" });
     } else {
       try {
         const updated = await Table.findOne({ table_no, date });
@@ -28,6 +30,7 @@ export default async function handler(req, res) {
           table_no,
           date,
           team_name,
+          phone_number,
         });
         const data = await table.save();
         res.status(200).json({ ...data._doc });

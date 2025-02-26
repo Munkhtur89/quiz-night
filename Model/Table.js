@@ -25,10 +25,14 @@ const Table = mongoose.Schema(
       required: true,
       type: Date,
     },
+    phone_number: {
+      type: String,
+      required: true,
+    },
   },
   {
     timestamps: true,
-  },
+  }
 );
 
 export default mongoose.models.Table || mongoose.model("Table", Table);
