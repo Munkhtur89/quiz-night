@@ -15,7 +15,7 @@ export default async function handler(req, res) {
       let thursdays = [];
       let date = new Date();
       date.setDate(date.getDate() + 7);
-      date.setHours(19, 0, 0, 0);
+      date.setHours(11, 0, 0, 0);
 
       while (tuesdays.length < 16 || thursdays.length < 16) {
         const day = date.getDay();
