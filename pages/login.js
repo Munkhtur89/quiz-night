@@ -1,5 +1,5 @@
-import { FormEvent } from "react";
 import { useRouter } from "next/router";
+import { toast } from "sonner";
 
 export default function LoginPage() {
   const router = useRouter();
@@ -19,8 +19,9 @@ export default function LoginPage() {
 
     if (response.ok) {
       router.push("/admin");
+      toast("Login successful");
     } else {
-      // Handle errors
+      toast("Not Authorized");
     }
   }
 

@@ -1,13 +1,11 @@
-import {
-  AboutUs,
-  Collections,
-  Footer,
-  Hero,
-  Navbar,
-  Tickets,
-  Sponsor,
-  Contact,
-} from "@/components";
+import AboutUs from "@/components/AboutUs";
+import Collections from "@/components/Collections";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
+import Hero from "@/components/Hero";
+import Navbar from "@/components/Navbar";
+import Sponsor from "@/components/Sponsor";
+import Tickets from "@/components/Tickets";
 import React from "react";
 
 const Home = () => {

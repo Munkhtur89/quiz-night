@@ -1,8 +1,8 @@
 import React from "react";
-import { Container } from ".";
 import { Reveal } from "react-awesome-reveal";
 import { fadeInLeft } from "@/keyframes";
 import Image from "next/image";
+import Container from "./Container";
 const AboutUs = () => {
   return (
     <Container className={"mb-44 scroll-mt-10"} id="about">

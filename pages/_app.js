@@ -1,5 +1,6 @@
 import Head from "next/head";
 import "../styles/globals.css";
+import { Toaster } from "@/components/ui/sonner";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -35,6 +36,7 @@ function MyApp({ Component, pageProps }) {
         <link rel="shortcut icon" href="/logo.png" type="image/x-icon" />
       </Head>
       <Component {...pageProps} />
+      <Toaster />
     </>
   );
 }

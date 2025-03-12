@@ -19,5 +19,5 @@ export default async function middleware(req) {
 }
 
 export const config = {
-  matcher: ["/admin"],
+  matcher: ["/admin", "/api/get_team_info", "/api/get_dates"],
 };

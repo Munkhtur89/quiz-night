@@ -1,8 +1,8 @@
 import React from "react";
-import { Container } from ".";
 import { Reveal } from "react-awesome-reveal";
 import { fadeInUp } from "@/keyframes";
 import Image from "next/image";
+import Container from "./Container";
 
 const Sponsor = () => {
   return (

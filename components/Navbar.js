@@ -2,8 +2,10 @@ import useWindowSize from "@/hooks/useWindowSize;";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
-import { Button, Container, Input, Logo } from ".";
 import { Fade } from "react-awesome-reveal";
+import Container from "./Container";
+import Logo from "./Logo";
+import Button from "./Button";
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
   const { width } = useWindowSize();

@@ -1,8 +1,9 @@
 import { list_collection } from "@/fake_data";
 import React from "react";
-import { Container, NFTItem } from ".";
 import { Reveal } from "react-awesome-reveal";
 import { fadeInDownShorter } from "@/keyframes";
+import Container from "./Container";
+import NFTItem from "./NFTItem";
 const Collections = () => {
   return (
     <Container id="collections" className={"mb-44 scroll-mt-10"}>

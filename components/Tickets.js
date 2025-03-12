@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { Button, Container } from ".";
 import { Reveal } from "react-awesome-reveal";
 import { fadeInLeft } from "@/keyframes";
 import Image from "next/image";
 import moment from "moment";
 import "moment/locale/mn";
 import Link from "next/link";
+import Container from "./Container";
+import Button from "./Button";
 
 const Tickets = () => {
   const [isTuesdayOpen, setIsTuesdayOpen] = useState(false);

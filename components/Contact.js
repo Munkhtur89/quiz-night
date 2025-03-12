@@ -1,8 +1,8 @@
-import React from 'react';
-import { Container } from '.';
-import { Reveal } from 'react-awesome-reveal';
-import { fadeInUp } from '@/keyframes';
-import Image from 'next/image';
+import React from "react";
+import { Reveal } from "react-awesome-reveal";
+import { fadeInUp } from "@/keyframes";
+import Image from "next/image";
+import Container from "./Container";
 
 const Contact = () => {
   return (
@@ -19,7 +19,8 @@ const Contact = () => {
             />
           </div>
           <h1 className="font-bold text-lg md:text-xl">
-            Улаанбаатар хот, Сүхбаатар дүүрэг, Чингисийн өргөн чөлөө, Баянгол ресторан
+            Улаанбаатар хот, Сүхбаатар дүүрэг, Чингисийн өргөн чөлөө, Баянгол
+            ресторан
           </h1>
         </div>
       </Reveal>
@@ -57,8 +58,6 @@ const Contact = () => {
           </h1>
         </div>
       </Reveal>
-   
-
     </Container>
   );
 };
