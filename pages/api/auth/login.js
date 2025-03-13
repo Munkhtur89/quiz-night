@@ -4,8 +4,8 @@ import bcrypt from "bcryptjs";
 const SECRET_KEY = new TextEncoder().encode(process.env.JWT_SECRET);
 
 const adminUser = {
-  username: "admin",
-  password: "$2b$10$mcLdZaAzP.9T90dW0geFXuClukPf0p6FVl0S82hkxQrZPkB422puy",
+  username: "quiz-admin",
+  password: "$2a$10$nHYFeb3gMBMfblXfbykN0uZk5m7H4TPAWe9pGpyQP6MhKdBumdLd2",
 };
 
 export default async function handler(req, res) {
